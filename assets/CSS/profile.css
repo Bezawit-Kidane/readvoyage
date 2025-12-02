@@ -1,0 +1,286 @@
+.profile-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 3rem;
+}
+
+.user-stats {
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    margin-bottom: 3rem;
+}
+
+.user-header {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 65%;
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+
+}
+
+.user-info h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.member-since {
+    margin-bottom: 1rem;
+    color: #7f8c8d;
+}
+
+.badges {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.badge {
+    border-radius: 30px;
+    background: #ecf0f1;
+    color: #2c3e50;
+    padding: 0.2rem 0.9rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.stat-card {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    border-top: 4px solid #3498db;
+    transition: transform 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-card h3 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.stat-card p {
+    color: #7f8c8d;
+    font-weight: 600;
+}
+
+.form-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.form-card {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.09);
+    border-radius: 15px;
+    background: #fff;
+    padding: 2rem;
+}
+
+.form-card h3 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input {
+    border: 2px solid lightgrey;
+    border-radius: 8px;
+    font-size: 1rem;
+    padding: 0.9rem 1rem;
+    width: 100%;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.form-btn {
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.login-btn {
+    color: #fff;
+    background: #3498db;
+}
+
+.login-btn:hover {
+    background: #2980b9;
+}
+
+.register-btn {
+    color: #fff;
+    background: #2c3e50;
+}
+
+.register-btn:hover {
+    background: #1a252f;
+}
+
+.form-note {
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}
+
+.form-note a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.form-note a:hover {
+    text-decoration: underline;
+}
+
+.current-reading {
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    background: #fff;
+}
+
+.current-reading h3 {
+    color: #2c3e50;
+    margin-bottom: 1.4rem;
+}
+
+.current-books {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.current-book {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+    border-left: 4px solid #3498db;
+}
+
+.book-details h4 {
+    color: #2c3e50;
+    margin-bottom: 0.4rem;
+}
+
+.book-details p {
+    color: #7f8c8d;
+    margin-bottom: 0.6rem;
+
+}
+
+.progress {
+    background: #ddd;
+    border-radius: 5px;
+    margin: 0.8rem 0;
+    overflow: hidden;
+    height: 8px;
+}
+
+.progress-bar {
+    background: #2ecc71;
+    border-radius: 5px;
+    height: 100%;
+}
+
+.progress-text {
+    color: #27ae60;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+    .profile-container {
+        padding: 1rem;
+    }
+
+    .user-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .forms-section {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .current-books {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-card {
+        padding: 1rem;
+    }
+
+    .form-card {
+        padding: 1.5rem 1rem;
+    }
+
+    .current-book {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .book-cover {
+        width: 80px;
+        height: 100px;
+    }
+}

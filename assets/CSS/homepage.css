@@ -1,0 +1,116 @@
+.hero {
+    padding: 4rem 1rem;
+    background: linear-gradient(135deg, #d3d3d3,#a9a9a9 );
+    color: #f08080;
+    border-radius: 9px;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.hero h2 {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+.hero p {
+    margin: 0 auto 2rem;
+    font-size: 1.2rem;
+}
+
+.hero button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 65px;
+    color: white;
+    background-color: #e74c3c;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+
+.hero button:hover {
+    background-color: #c0392b;
+}
+
+.shelves {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.shelf {
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: #f0f8ff;
+}
+
+.shelf h3 {
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-bottom: 2px solid #3498db;
+}
+
+.book-card {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+    margin-top: 1rem;
+    padding: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+
+}
+
+.book-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.book-card h4 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.book-card p {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 2rem 1rem;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .shelves {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .shelf {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 1.9rem;
+    }
+
+    .hero button {
+        width: 100%;
+        padding: 0.9rem;
+    }
+
+    .book-card {
+        padding: 0.9rem;
+    }
+}
