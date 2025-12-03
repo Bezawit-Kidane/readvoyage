@@ -9,12 +9,15 @@
   </head>
   <body>
     <header>
-      <h1>ReadVoyage</h1>
+      <div class="logo-container">
+        <span class="logo-icon">📚</span>
+        <h1>ReadVoyage</h1>
+      </div>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="discover.html">Discover</a></li>
-          <li><a href="profile.html">Profile</a></li>
+          <li><a href="profile.html" class="active">Profile</a></li>
         </ul>
       </nav>
     </header>
@@ -24,35 +27,45 @@
           <div class="avatar">RV</div>
           <div class="user-info">
             <h2>Reader Voyager</h2>
-            <p class="member-since">Member since: July 2024</p>
+            <p class="member-since">Member since: December 2025</p>
             <div class="badges">
               <span class="badge">📚Bookworm</span>
-              <span class="badge">⭐Reviewer</span>
-              <span class="badge">🏆 50 Books</span>
+              <span class="badge">⭐Top Reviewer</span>
+              <span class="badge">🏆 Reading Champion</span>
             </div>
           </div>
         </div>
         <div class="stats-grid">
           <div class="stat-card">
-            <h3>📖 56</h3>
+            <h3>56</h3>
             <p>Books Read</p>
+            <span class="stat-icon">📖</span>
           </div>
           <div class="stat-card">
-            <h3>⌛4</h3>
+            <h3>4</h3>
+            <p>Currently Reading</p>
+            <span class="stat-icon">⌛</span>
+          </div>
+          <div class="stat-card">
+            <h3>17</h3>
             <p>Reviews Written</p>
+            <span class="stat-icon">✍️</span>
           </div>
           <div class="stat-card">
-            <h3>🗓️ 178</h3>
-            <p>Reading Days Streak</p>
+            <h3>178</h3>
+            <p>Days Streak</p>
+            <span class="stat-icon">🔥</span>
           </div>
         </div>
       </section>
       <section class="form-section">
         <div class="form-card">
-          <h3>Login</h3>
+          <div class="form-header">
+            <h3><span class="form-icon">🔐</span>Login</h3>
+          </div>
           <form class="login-form">
             <div class="form-group">
-              <label for="email">Email</label>
+              <label for="email">Email Address</label>
               <input
                 type="email"
                 id="email"
@@ -70,24 +83,26 @@
               />
             </div>
             <button type="submit" class="form-btn login-btn">Sign In</button>
-            <p class="form-note">Forgot password? <a href="#">Click here</a></p>
+            <p class="form-note">Forgot password? <a href="#">Reset here</a></p>
           </form>
         </div>
 
         <div class="form-card">
-          <h3>Join ReadVoyage</h3>
+          <div class="form-header">
+            <h3><span class="form-icon">🚀</span>Join ReadVoyage</h3>
+          </div>
           <form class="register-form">
             <div class="form-group">
               <label for="fullname">Full Name</label>
               <input
                 type="text"
                 id="fullname"
-                placeholder="Bezawit Kidana"
+                placeholder="Full Name"
                 required
               />
             </div>
             <div class="form-group">
-              <label for="new-email">Email</label>
+              <label for="new-email">Email Address</label>
               <input
                 type="text"
                 id="new-email"
@@ -117,52 +132,16 @@
               Create Account
             </button>
             <p class="form-note">
-              By joining, you agree to our <a href="#">Terms</a>
+              By joining, you agree to our <a href="#">Terms and Privacy</a>
             </p>
           </form>
         </div>
       </section>
-      <section class="current-reading">
-        <h3>Currently Reading</h3>
-        <div class="current-books">
-          <div class="current-book">
-            <div
-              class="book-cover"
-              style="background: linear-gradient(135deg, #3498db, #2c3e50)"
-            >
-              RV
-            </div>
-            <div class="book-details">
-              <h4>The Great Gatsby</h4>
-              <p>F. Scott Fitzgerald</p>
-              <div class="progress">
-                <div class="progress-bar" style="width: 65%"></div>
-              </div>
-              <p class="progress-text">65% complete</p>
-            </div>
-          </div>
-          <div class="current-book">
-            <div
-              class="book-cover"
-              style="background: linear-gradient(135deg, #e74c3c, #c0392b)"
-            >
-              RV
-            </div>
-            <div class="book-details">
-              <h4>1984</h4>
-              <p>George Orwell</p>
-              <div class="progress">
-                <div class="progress-bar" style="width: 30%"></div>
-              </div>
-              <p class="progress-text">30% complete</p>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
-    <footer>
+    <footer class="footer">
       <p>&copy; 2025 ReadVoyage. All rights reserved.</p>
       <p>Track your reading journey with us.</p>
     </footer>
   </body>
 </html>
+
