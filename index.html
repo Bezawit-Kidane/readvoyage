@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ReadVoyage</title>
-    <link rel="stylesheet" href="assets/CSS/style.css" />
-    <link rel="stylesheet" href="assets/CSS/homepage.css" />
+    <link rel="stylesheet" href="assets/css/style1.css" />
   </head>
   <body>
     <header>
@@ -17,100 +16,145 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="discover.html">Discover</a></li>
-          <li><a href="profile.html">Profile</a></li>
+          <li><a href="login.html">Login</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section class="hero">
         <h2>Welcome to ReadVoyage</h2>
-        <p>Track, Discover And Share Your Reading Journey.</p>
-        <button>Start Reading</button>
+        <p>
+          Your reading journey starts here organize your book and explore new
+          things.
+        </p>
+        <a href="login.html"><button class="want-btn">Start Reading</button></a>
       </section>
       <section class="shelves">
         <div class="shelf">
           <h3>Want to Read</h3>
-          <div class="book-card">
-            <img
-              src="image/OIP.webp"
-              alt="The Midnight Library"
-              class="book-cover"
-            />
-            <h4>The Midnight Library</h4>
-            <p>Matt Haig</p>
-          </div>
-          <div class="book-card">
-            <img
-              src="image/download.webp"
-              alt="The Book Theif"
-              class="book-cover"
-            />
-            <h4>The Book Thief</h4>
-            <p>Markus Zusak</p>
-          </div>
-          <div class="book-card">
-            <img src="image/R.jpg" alt="Project Hail Mary" class="book-cover" />
-            <h4>Project Hail Mary</h4>
-            <p>Andy Weir</p>
-          </div>
-        </div>
-        <div class="shelf">
-          <h3>Currently Reading</h3>
-          <div class="book-card">
-            <img
-              src="image/BTCGC.webp"
-              alt="Before The Coffee Gets Cold"
-              class="book-cover"
-            />
-            <h4>Before the Coffee Gets Cold</h4>
-            <p>Toshikazu Kawaguchi</p>
-          </div>
-          <div class="book-card">
-            <img src="image/AH.webp" alt="Atomic Habits" class="book-cover" />
-            <h4>Atomic Habits</h4>
-            <p>James Clear</p>
-          </div>
-          <div class="book-card">
-            <img
-              src="image/SP.webp"
-              alt="The Silent Patient"
-              class="book-cover"
-            />
-            <h4>The Silent Patient</h4>
-            <p>Alex Michaelides</p>
+          <div class="books-row">
+            <div class="book-card">
+              <div class="book-cover">
+                <img
+                  src="image/OIP.webp"
+                  alt="The Midnight Library"
+                  class="book-cover"
+                />
+              </div>
+              <h4>The Midnight Library</h4>
+              <p>Matt Haig</p>
+              <button class="want-btn">Start Reading</button>
+            </div>
+            <div class="book-card">
+              <div class="book-cover">
+                <img
+                  src="image/download.webp"
+                  alt="The Book Theif"
+                  class="book-cover"
+                />
+              </div>
+              <h4>The Book Thief</h4>
+              <p>Markus Zusak</p>
+              <button class="want-btn">Start Reading</button>
+            </div>
+            <div class="book-card">
+              <div class="book-cover">
+                <img
+                  src="image/R.jpg"
+                  alt="Project Hail Mary"
+                  class="book-cover"
+                />
+              </div>
+              <h4>Project Hail Mary</h4>
+              <p>Andy Weir</p>
+              <button class="want-btn">Start Reading</button>
+            </div>
           </div>
         </div>
         <div class="shelf">
-          <h3>Finished Reading</h3>
-          <div class="book-card">
-            <img src="image/1984.webp" alt="1984" class="book-cover" />
-            <h4>1984</h4>
-            <p>George Orwell</p>
+          <h3>Reading Now</h3>
+          <div class="books-row">
+            <div class="book-card">
+              <div class="book-cover">
+                <img
+                  src="image/BTCGC.webp"
+                  alt="Before The Coffee Gets Cold"
+                  class="book-cover"
+                />
+              </div>
+              <h4>Before the Coffee Gets Cold</h4>
+              <p>Toshikazu Kawaguchi</p>
+              <button class="reading-btn">Mark as Finished</button>
+            </div>
+            <div class="book-card">
+              <div class="book-cover">
+                <img
+                  src="image/AH.webp"
+                  alt="Atomic Habits"
+                  class="book-cover"
+                />
+              </div>
+              <h4>Atomic Habits</h4>
+              <p>James Clear</p>
+              <button class="reading-btn">Mark as Finished</button>
+            </div>
+            <div class="book-card">
+              <div class="book-cover">
+                <img
+                  src="image/SP.webp"
+                  alt="The Silent Patient"
+                  class="book-cover"
+                />
+              </div>
+              <h4>The Silent Patient</h4>
+              <p>Alex Michaelides</p>
+              <button class="reading-btn">Mark as Finished</button>
+            </div>
           </div>
-          <div class="book-card">
-            <img
-              src="image/SP.webp"
-              alt="To kill a Mockingbird"
-              class="book-cover"
-            />
-            <h4>To Kill a Mockingbird</h4>
-            <p>Harper Lee</p>
-          </div>
-          <div class="book-card">
-            <img
-              src="image/where the.webp"
-              alt="Where the Crawdads Sing"
-              class="book-cover"
-            />
-            <h4>Where the Crawdads Sing</h4>
-            <p>Delia Owens</p>
+        </div>
+        <div class="shelf">
+          <h3>Completed Books</h3>
+          <div class="books-row">
+            <div class="book-card">
+              <div class="book-cover">
+                <img src="image/1984.webp" alt="1984" class="book-cover" />
+              </div>
+              <h4>1984</h4>
+              <p>George Orwell</p>
+              <button class="Completed-btn">Give Review</button>
+            </div>
+            <div class="book-card">
+              <div class="book-cover">
+                <img
+                  src="image/to kill.webp"
+                  alt="To kill a Mockingbird"
+                  class="book-cover"
+                />
+              </div>
+              <h4>To Kill a Mockingbird</h4>
+              <p>Harper Lee</p>
+              <button class="Completed-btn">Give Review</button>
+            </div>
+            <div class="book-card">
+              <div class="book-cover">
+                <img
+                  src="image/where the.webp"
+                  alt="Where the Crawdads Sing"
+                  class="book-cover"
+                />
+              </div>
+              <h4>Where the Crawdads Sing</h4>
+              <p>Delia Owens</p>
+              <button class="Completed-btn">Give Review</button>
+            </div>
           </div>
         </div>
       </section>
     </main>
     <footer>
-      <p>&copy; 2025 ReadVoyage. All rights reserved.</p>
+      <p>&copy; 2025 ReadVoyage - Student Project</p>
     </footer>
   </body>
 </html>
+
 
